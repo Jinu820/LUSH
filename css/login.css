@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.container1 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.login {
+    margin: 200px 0;
+    text-align: center;
+}
+.login ul {
+    margin: 50px 0 ;
+    text-align: center;
+
+}
+.login ul > li {
+    display: inline-block;
+    text-decoration: underline;
+    padding: 0 40px;
+}
+.login ul > li:nth-child(2) {
+    color: #ccc;
+}
+.login ul > li > a {
+    font-size: 18px;
+}
+.login form input {
+    border: 1px solid #333;
+}
+.login form #id {
+    width: 335px;
+    height: 55px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.login form #password {
+    width: 335px;
+    height: 55px;
+    text-align: center;
+    font-size: 16px;
+}
+.login form .save {
+    text-align: left;
+    display: inline-block;
+    width:335px;
+    padding-top: 20px;
+
+}
+.login form .save label {
+    font-size: 14px;
+    color: #8f8f8f;
+    cursor: pointer;
+}
+.login form .btn > button {
+    margin-top: 20px;
+    width: 335px;
+    height: 55px;
+    background: #000;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+.login form .text3 {
+    margin-top: 30px;
+}
+.login form .text3 > a {
+    display: inline-block;
+    font-size: 13px;
+    color: #8f8f8f;
+    padding: 0 8px;
+}
+.login form .text3 > a+a {
+    height: 13px;
+    border-left: 1px solid #8f8f8f;
+}

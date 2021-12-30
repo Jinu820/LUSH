@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+body {font-family: sans-serif;}
+.row {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 99;
+
+}
+#header h1 {
+    float: left;
+    top: 0;
+    left: 0;
+}
+#header #nav {
+    float: right;
+}
+#header #nav .depth1 {
+    float: left;
+
+}
+#header #nav .depth1 > li {
+    float: left;
+}
+#header #nav .depth1 > li > a {
+    color: #fff;
+    letter-spacing: 3px;
+    display: block;
+    text-align: center;
+    padding-right: 35px;
+    margin-right: 35px;
+    line-height: 100px;
+    
+}
+
+/* depth2 삼각형 */
+
+#header #nav .depth1 >li:nth-child(1)::after {
+    content: '';
+    position: relative;
+    top: -10px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border: 10px solid #333;
+    border-top: none;
+    border-left-color: transparent ;
+    border-right-color: transparent ;
+    display: none;
+}
+#header #nav .depth1>li:nth-child(1):hover::after {
+    display: block;
+}
+
+#header #nav .depth1 >li:nth-child(2)::after {
+    content: '';
+    position: relative;
+    top: -10px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border: 10px solid #333;
+    border-top: none;
+    border-left-color: transparent ;
+    border-right-color: transparent ;
+    display: none;
+}
+#header #nav .depth1>li:nth-child(2):hover::after {
+    display: block;
+}
+/* 삼각형 끝 */
+
+#header #nav .depth1 >li:nth-child(1) .depth2   {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    display: none;
+}
+#header #nav .depth1 > li .depth2 > ul {
+    text-align: center;
+}
+
+#header #nav .depth1 .depth2  > ul > li {
+    font-size: 18px;
+    margin: 50px 30px 50px 0;
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+}
+/* #header #nav .depth1 >li:nth-child(1) .depth2 > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 50px 25px 50px 0;
+} */
+#header #nav .depth1>li:nth-child(1):hover .depth2 {
+    display: block;
+}
+
+#header #nav .depth1 >li:nth-child(2) .depth2   {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    display: none;
+}
+#header #nav .depth1>li:nth-child(2):hover .depth2{
+    display: block;
+}
+
+
+#header #nav .depth1 .depth2 .depth3 > li {
+    padding-top: 15px;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+
+
+#header #nav .sidemenu {
+    float: right;
+    line-height: 100px;
+    position: relative;
+}
+#header .sidemenu > a {
+    margin-left:30px ;
+}
+#header #nav .sidemenu .sidedepth {
+    position: absolute;
+    right: -10%;
+    top: 80%;
+    display: none;
+    border: 1px solid #fff;
+
+}
+#header #nav .sidemenu .sidedepth > li {
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+    transition: all .3s;
+}
+#header #nav .sidemenu .sidedepth > li:hover {
+    background-color: #000;
+    color: #fff;
+}
+#header #nav .sidemenu .sidedepth > li a {
+    display: block;
+    font-size: 12px;
+    line-height: 50px;
+}
+
+#header #nav .sidemenu .sidedepth::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    border: 10px solid #fff;
+    border-top: none;
+    border-left-color: transparent ;
+    border-right-color: transparent ;
+}
+
+#header #nav .sidemenu:hover .sidedepth {
+    display: block;
+}
+
+
+
+#header #nav .sidemenu .sidedepth > li+li {
+    border-top: 1px solid #ccc;
+}
+
+
+/* 푸터시작 */
+#footer {
+    width: 100%;
+}
+#footer .footericon {
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    background-image: url(../img/footer-icons.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#footer .footerinfo {
+    color: #fff;
+    background-color: #000;
+    height: 420px;
+}
+#footer .footerinfo .infoleft {
+    float: left;
+    padding-left: 100px;
+    width: 300px;
+}
+#footer .footerinfo .infoleft .foot1 {
+    margin-top: 30px;
+}
+#footer .footerinfo .infoleft .lefttext > a {
+    display: inline-block;
+    text-decoration: underline;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+} 
+#footer .footerinfo .infoleft .foot2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#footer .footerinfo .infoleft .snsicon > a {
+    float: left;
+    width: 17%;
+    padding: 20px 7px 0px 0px;
+}
+
+#footer .footerinfo .inforight {
+    width: 800px;
+    height: 100%;
+    float: right;
+}
+#footer .footerinfo .inforight .toplink {
+    height: 100px;
+    line-height: 100px;
+    
+}
+#footer .footerinfo .inforight .toplink > a {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 14px;
+}
+#footer .footerinfo .inforight .toplink > a:nth-child(3) {
+    color: #fbe85e;
+}
+#footer .footerinfo .inforight .search fieldset {
+    border: 1px solid #fff;
+    display: inline-block;
+}
+#footer .footerinfo .inforight .search input {
+    width: 350px;
+    height: 40px;
+    text-indent: 1em;
+    border: none;
+}
+#footer .footerinfo .inforight .search button {
+    display: inline-block;
+    /* margin-top: 50px; */
+    width: 100px;
+    height: 40px;
+    background: none;
+    color: #fff;
+    border:none;
+}
+#footer .footerinfo .inforight .foot3 {
+    padding: 15px 0;
+}
+#footer .footerinfo .inforight .foot3 p > a {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+#footer .footerinfo .inforight .foot3 p {
+    padding: 5px 0;
+}
+#footer .footerinfo .inforight .address{
+    font-size: 14px;
+    padding: 20px 0;
+    color: #999;   
+}
+#footer .footerinfo .inforight .address p {
+    padding: 2px;
+}
+#footer .footerinfo .inforight .copyright {
+    font-size: 14px;
+    color: #999;
+}

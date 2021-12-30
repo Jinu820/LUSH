@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+
+/* 메인시작 */
+
+#main {
+    width: 100%;
+}
+
+#main .showcase > a {
+    height: 170px;
+    background-color: #F5C2D8;
+    background-size: auto 70px;
+    background-image: url(../img/wintershowcase.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    display: block;
+}
+
+/* section1 */
+#main .sec1 > a {
+    height: 570px;
+    background-image: url(../img/sec1img.jpg) ;
+    background-repeat: no-repeat;
+    background-position: 50% ;
+    display: block;
+}
+
+/* section2 */
+#main .section2 {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 80px 0 100px;
+    position: relative;
+
+}
+#main .section2 h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+#main .section2 .product {
+    width: 880px;
+    margin-bottom: 30px;
+}
+#main .section2 .product .prod3 > li {
+    float: left;
+    width: 270px;
+    text-align: center;
+    margin-right: 20px ;
+}
+#main .section2 .product .prod3 > li .prodname {
+    font-size: 18px;
+}
+#main .section2 .product .prod3 > li .prodsub {
+    padding-top: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #bbb;
+}
+#main .section2 .product .slidebtn {
+    position: relative;
+    left: 0;
+    padding-top: 40px;
+}
+#main .section2 .product .slidebtn > a {
+    display: inline-block;
+    border: 2px solid #000;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+
+/* 슬라이드 구역 */
+#main .section2 .prodright {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    background-color: #eee;
+}
+#main .section2 .prodright .slideouter {
+    width: 280px;
+}
+#main .section2 .prodright .slideouter .slide {
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main .section2 .prodright .slideouter .slide1 {
+    background-image: url(../img/slide1.jpg);
+}
+/* #main .section2 .prodright .slideouter .slide2 {
+    background-image: url(../img/slide2.jpg);
+}
+#main .section2 .prodright .slideouter .slide3 {
+    background-image: url(../img/slide3.jpg);
+}
+#main .section2 .prodright .slideouter .slide4 {
+    background-image: url(../img/silde4.jpg);
+}
+#main .section2 .prodright .slideouter .slide5 {
+    background-image: url(../img/slide5.jpg);
+} */
+
+/* section3 */
+/* #main .section3 {} */
+#main .section3 {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#main .section3 .leftbox {
+    float: left;
+    width: 45%;
+    height: 560px;
+    background-image: url(../img/leftbox1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main .section3 .rightbox  {
+    float: right;
+    background-repeat: no-repeat;
+    width: 55%;
+
+} 
+#main .section3 .rightbox .topbox {
+    background-image: url(../img/topbox.gif);
+    /* width: 790px; */
+    height: 280px;
+    background-size: cover;
+
+}
+#main .section3 .rightbox .bottomleft {
+    float: left;
+    width: 50% ;
+    height: 280px;
+    background-image: url(../img/bottomleft.jpg);
+    background-size: cover;
+}
+#main .section3 .rightbox .bottomright {
+    float: right;
+    width: 50% ;
+    height: 280px;
+    background-image: url(../img/bottomright.jpg);
+    background-size: cover;
+
+}
+
+
+#main .section4 {
+    padding: 80px 0 150px;
+}
+#main .section4 .sec4text {
+    float: left;
+    margin-left: 250px;
+    
+}
+#main .section4 .sec4text > h3 {
+    font-size: 42px;
+    margin: 100px 0 20px 0;
+}
+#main .section4 .sec4text > p {
+    font-size: 16px;
+    color: #333;
+    padding: 3px 0;
+}
+
+#main .section4 .sec4img {
+    margin-right: 100px;
+    float: right;
+}
+
+
+
+
+    
+    
+
+
+
+
+ 
